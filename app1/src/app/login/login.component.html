@@ -1,0 +1,28 @@
+<div>
+<form action="">
+    <h4>Login form</h4>
+UserName:<input type="text" [(ngModel)]="UserName" name="username"/>
+<br/>
+Password:<input type="Password" [(ngModel)]="Password" name="Password" />
+ConfirmPassword:<input type="Password" [(ngModel)]="Confirmpassword" name="ConfirmPassword" />
+<br/>
+Gender:<input type="radio" [(ngModel)]="Gender" name="Gender" value="M" />Male<br/>
+
+Gender:<input type="radio" [(ngModel)]="Gender" name="Gender" value="F" />FeMale<br/>
+
+Country:<select [(ngModel)]="country">
+        <option>-Select-</option>
+        <option>India</option>
+        <option>S.Korea</option>
+        <option>USA</option>
+        <option>Australia</option>
+</select>
+
+<br/>
+<input type="Submit" value="Login" (click)="CheckLogin()"     />
+<br/>
+{{Msg}}
+
+</form>
+
+</div>

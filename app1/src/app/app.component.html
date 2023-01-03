@@ -1,0 +1,21 @@
+<app-login></app-login>
+
+<br/>
+<hr/>
+<app-style></app-style>
+<hr/>
+<h1>{{msg}}</h1>
+<div>
+  <h4>Two way data binding</h4>
+  Name::{{name}}<br/>
+  age ::{{age}}
+  <hr>
+  Name:<input type="text" [(ngModel)]="name"/><br/>
+  Age:<input type="text" [(ngModel)]="age"/><br/>
+
+
+  <input type="buton" value="Submit" (click)=" handleSubmitBtn()" /><br/>
+<br/>
+
+
+</div>
